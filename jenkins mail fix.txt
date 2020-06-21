@@ -1,0 +1,7 @@
+Jenkins mail fix
+
+cd /etc/sysconfig
+vim jenkins
+
+JENKINS_JAVA_OPTIONS="-Djava.awt.headless=true -Dmail.smtp.starttls.enable=true -Dmail.smtp.ssl.protocols=TLSv1.2"
+
